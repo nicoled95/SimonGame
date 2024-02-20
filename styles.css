@@ -4,26 +4,32 @@ body {
 }
 
 #level-title {
+  grid-column: span 2;
   font-family: 'Press Start 2P', cursive;
-  font-size: 3rem;
+  font-size: 40px;
   margin:  5%;
+  margin-top: 2rem;
   color: #FEF2BF;
 }
 
 .container {
-  display: block;
-  width: 50%;
-  margin: auto;
-
+  display: grid;
+  margin: 0px auto auto auto auto;
+  padding: 0px 20% 0px 20%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 30px;
+  column-gap: 30px;
 }
 
 .btn {
-  margin: 25px;
-  display: inline-block;
-  height: 200px;
-  width: 200px;
-  border: 10px solid black;
-  border-radius: 20%;
+  display: grid;
+  height: 15rem;
+  width: 15rem;
+  border: 1rem solid black;
+  border-radius: 20%; 
+
+  margin: auto auto auto auto;
 }
 
 .game-over {
